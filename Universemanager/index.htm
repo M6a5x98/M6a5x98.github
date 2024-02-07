@@ -8,24 +8,23 @@
   </head>
   <body>
     <h1>This is universe manager</h1>
-    <form>
+    <form id="planet">
       <input type="checkbox" name="Life" id="life" />
       <label for="Life">Life</label>
-      <div id="radios">
         <input type="radio" name="deleteO2" id="deleteO2" />
         <label for="deleteO2">Delete O2</label>
         <input type="radio" name="deleteC" id="deleteC" />
         <label for="deleteC">Delete carbon</label><br>
-        <section id="life">
+        <input type="submit" value="Sve and apply modifications">
+        </form>
+        <form id="life">
         <label for="radioactivity">Radioactivity</label>
         <input type="range" name="radioactivity" id="radioactivity" min="0" max="100" value="3"><br><br>
         <label for="creatures">Number of celluls</label>
         <input type="number" name="creatures" id="creatures" min="100" max="10000"><br><br>
         <label for="creatures">Reproduction rate</label>
         <input type="number" name="tauxDeReproduction" id="tauxDeReproduction" min="2" max="10"><br><br>
-      </section>
-    </div>
-      <input type="submit" value="Save and apply modification" />
+      <input type="submit" value="Simulate !" />
     </form>
     <script src="main.js"></script>
   </body>

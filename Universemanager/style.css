@@ -8,10 +8,14 @@ h1:hover {
     transition: 0.5s;
 }
 
-form {
+form#planet {
     border: 1px pink solid;
     border-radius: 20px;
     padding: 10px;
+}
+
+form#life {
+    border: darkblue 1px dashed;
 }
 
 h3 {
@@ -19,5 +23,5 @@ h3 {
 }
 
 .explode {
-    background: url("../assets/IMG_3135.gif");
+    background: url("/assets/explode.gif");
 }
