@@ -15,12 +15,16 @@
         <input type="radio" name="deleteO2" id="deleteO2" />
         <label for="deleteO2">Delete O2</label>
         <input type="radio" name="deleteC" id="deleteC" />
-        <label for="deleteC">Delete carbon</label>
-        <input type="range" name="radioactivity" id="radioactivity" min="0" max="100" value="3">
+        <label for="deleteC">Delete carbon</label><br>
+        <section id="life">
         <label for="radioactivity">Radioactivity</label>
-        <input type="number" name="creatures" id="creatures" min="100" max="10000">
+        <input type="range" name="radioactivity" id="radioactivity" min="0" max="100" value="3"><br><br>
         <label for="creatures">Number of celluls</label>
-      </div>
+        <input type="number" name="creatures" id="creatures" min="100" max="10000"><br><br>
+        <label for="creatures">Reproduction rate</label>
+        <input type="number" name="tauxDeReproduction" id="tauxDeReproduction" min="2" max="10"><br><br>
+      </section>
+    </div>
       <input type="submit" value="Save and apply modification" />
     </form>
     <script src="main.js"></script>

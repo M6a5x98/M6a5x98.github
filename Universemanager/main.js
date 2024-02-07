@@ -7,8 +7,23 @@ document.querySelector("form").addEventListener("submit", (e) => {
   }, 1000);
 });
 
-function calculLife(radio, waterSurface, creatures) {
-  let radioInWater = radio/Math.log(waterSurface)
-  let creaturesRestantes = creatures - Math.round(radioInWater)
-
+function calculLife(radio, waterSurface, population, reproRate, rounds) {
+  let radioInWater = Math.round(radio/Math.log(waterSurface)) + Math.round(Math.random())
+  let populationRestante = population - (radioInWater)
+  let Population = populationRestante;
+  for (let i = 0; i < rounds.length; i++) {
+    let radioInWater = Math.round(radio/Math.log(waterSurface)) + Math.round(Math.random())
+    let reproductionRate = Math.round((Math.random() * (reproRate - 1)) + 1)
+    const element = rounds[i];
+    console.log(`Population grew of ${reproductionRate} and ${radioInWater} creatures are dead`)
+    Population -= radioInWater
+    Population += reproductionRate
+  }
 }
+
+/*
+let rounds = Array<{
+  event: 'population -x' OR 'population +3',
+  reproRate?: number
+}>
+*/
